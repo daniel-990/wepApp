@@ -9,20 +9,21 @@
         <div class="row">
           <div class="input-field col s12">
           <i class="fa fa-sign-in prefix color-blanco" aria-hidden="true"></i>
-          <input id="usuario" type="text" class="validate color-blanco">
+          <input id="usuario" type="text" class="validate color-blanco" ng-model="vm.email">
           <label for="" class="color-blanco">Usuario</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
           <i class="fa fa-unlock prefix color-blanco" aria-hidden="true"></i>
-          <input id="pass" type="password" class="validate color-blanco">
+          <input id="pass" type="password" class="validate color-blanco" ng-model="vm.pass">
           <label for="" class="color-blanco">Contraseña</label>
           </div>
         </div>   
-        <a id="ingresar" class="btn waves-effect waves-light blue" href="#!">Entrar <i class="fa fa-paper-plane" aria-hidden="true"></i></a>
-        <a id="ingresar-git" class="btn waves-effect waves-light tooltipped red" href="#!" data-position="right" data-delay="50" data-tooltip="con github">Entrar <i class="fa fa-github" aria-hidden="true"></i></a>
-      </form>
+        <button ng-click="vm.loginUser()" class="btn waves-effect waves-light blue">Entrar <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+        <button ng-click="vm.loginConGit()" class="btn waves-effect waves-light tooltipped red">Entrar <i class="fa fa-github" aria-hidden="true"></i>
+         </button>
+       </form>
     </div>
     </div>
 </section>
